@@ -37,7 +37,7 @@ class Bootstrap
 		} elseif (\is_file($dir . '/../config/general.local.neon')) {
 			$configurator->addConfig($dir . '/../config/general.local.neon');
 		} else {
-			\trigger_error('Please run "composer init-devel or init-production"', \E_USER_ERROR);
+			throw new \RuntimeException('Please run "composer init-devel or init-production"');
 		}
 		
 		return $configurator;
