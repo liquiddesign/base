@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.24](https://github.com/liquiddesign/base/compare/v2.0.23...v2.0.24) (2025-02-13)
+
+### Bug Fixes
+
+* Replace trigger_error with RuntimeException for better error handling ([cd5a9b](https://github.com/liquiddesign/base/commit/cd5a9bf57b4af986e9c2200ed441636fa83dbe0d))
+
+
+---
+
 ## [2.0.23](https://github.com/liquiddesign/base/compare/v2.0.22...v2.0.23) (2024-12-12)
 
 ### Features
