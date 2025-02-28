@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Base;
 
-use Nette\Bootstrap\Configurator;
-
 class Bootstrap
 {
 	public static function boot(): Configurator
@@ -14,7 +12,7 @@ class Bootstrap
 		
 		$environment = (new \Nette\DI\Config\Loader())->load($dir . '/../config/environments.neon');
 		
-		$configurator = new \Nette\Bootstrap\Configurator();
+		$configurator = new Configurator();
 		$configurator->setDebugMode($environment['parameters']['access']['debug'] ?? []);
 		$configurator->setTimeZone('Europe/Prague');
 		
