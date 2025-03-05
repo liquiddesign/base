@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.25](https://github.com/liquiddesign/base/compare/v2.0.24...v2.0.25) (2025-03-05)
+
+### Features
+
+* Introduce Configurator class with enhanced debug mode detection for reserved Docker addresses ([045e46](https://github.com/liquiddesign/base/commit/045e467d356a50d2aeaa5ed2437d3d48bcb8c439))
+
+
+---
+
 ## [2.0.24](https://github.com/liquiddesign/base/compare/v2.0.23...v2.0.24) (2025-02-13)
 
 ### Bug Fixes
