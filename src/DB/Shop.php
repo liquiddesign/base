@@ -19,4 +19,9 @@ class Shop extends Entity
 	 * @column
 	 */
 	public string $baseUrl;
+
+	/**
+	 * @column{"type":"longtext"}
+	 */
+	public string|null $icon;
 }
