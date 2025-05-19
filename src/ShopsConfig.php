@@ -22,6 +22,11 @@ class ShopsConfig
 	 */
 	private array $availableShops;
 
+//	/**
+//	 * @var array<string, string>
+//	 */
+//	private array $availableShopsArrayForSelect;
+
 	public function __construct(
 		private readonly ShopRepository $shopRepository,
 		private readonly Request $request,
@@ -127,6 +132,24 @@ class ShopsConfig
 	public function getAvailableShopsArrayForSelect(): array
 	{
 		return $this->shopRepository->getArrayForSelect();
+
+//		if (isset($this->availableShopsArrayForSelect)) {
+//			return $this->availableShopsArrayForSelect;
+//		}
+//
+//		$result = [];
+//
+//		/** @var \Base\DB\Shop $shop */
+//		foreach ($this->shopRepository->getCollection(true) as $shop) {
+//			$result[$shop->getPK()] = $shop->icon ? "<img
+//						width=\"24\"
+//						height=\"24\"
+//						src=\"data:image/png;base64,$shop->icon\"
+//						alt=\"$shop->name\"
+//					/>" : $shop->name;
+//		}
+//
+//		return $this->availableShopsArrayForSelect = $result;
 	}
 
 	/**
