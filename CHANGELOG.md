@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.26](https://github.com/liquiddesign/base/compare/v2.0.25...v2.0.26) (2025-05-19)
+
+### Features
+
+* Add nullable icon property to Shop class for enhanced customization ([f323eb](https://github.com/liquiddesign/base/commit/f323ebadd1b8bba3b06043f590c9c352150aad14))
+
+
+---
+
 ## [2.0.25](https://github.com/liquiddesign/base/compare/v2.0.24...v2.0.25) (2025-03-05)
 
 ### Features
