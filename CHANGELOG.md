@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.27](https://github.com/liquiddesign/base/compare/v2.0.26...v2.0.27) (2025-05-29)
+
+### Features
+
+* Add getBaseUrls method to Shop class for improved base URL handling ([f3badc](https://github.com/liquiddesign/base/commit/f3badc12a94e6b6931109660cbf2999425624ba9))
+
+
+---
+
 ## [2.0.26](https://github.com/liquiddesign/base/compare/v2.0.25...v2.0.26) (2025-05-19)
 
 ### Features
