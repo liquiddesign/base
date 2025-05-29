@@ -58,7 +58,7 @@ class ShopsConfig
 		$host = $this->request->getUrl()->getHost();
 
 		foreach ($this->shopRepository->many() as $shop) {
-			$baseUrls = \explode(';', Strings::lower($shop->baseUrl));
+			$baseUrls = $shop->getBaseUrls();
 
 			foreach ($baseUrls as $baseUrl) {
 				if (\str_contains(Strings::lower($host), $baseUrl)) {
@@ -99,7 +99,7 @@ class ShopsConfig
 
 		if (!$selectedShop) {
 			foreach ($this->shopRepository->many() as $shop) {
-				$baseUrls = \explode(';', Strings::lower($shop->baseUrl));
+				$baseUrls = $shop->getBaseUrls();
 
 				foreach ($baseUrls as $baseUrl) {
 					if (\str_contains(Strings::lower($host), $baseUrl)) {

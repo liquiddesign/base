@@ -2,6 +2,7 @@
 
 namespace Base\DB;
 
+use Nette\Utils\Strings;
 use StORM\Entity;
 
 /**
@@ -24,4 +25,12 @@ class Shop extends Entity
 	 * @column{"type":"longtext"}
 	 */
 	public string|null $icon;
+
+	/**
+	 * @return list<string>
+	 */
+	public function getBaseUrls(): array
+	{
+		return \explode(';', Strings::lower($this->baseUrl));
+	}
 }
