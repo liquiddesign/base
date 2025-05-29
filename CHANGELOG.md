@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.29](https://github.com/liquiddesign/base/compare/v2.0.28...v2.0.29) (2025-05-29)
+
+### Features
+
+* Add nullable shopUrl property to Shop class for enhanced URL management ([9a42a6](https://github.com/liquiddesign/base/commit/9a42a6be13fa761ba299cf5250689e5974e959b2))
+
+
+---
+
 ## [2.0.28](https://github.com/liquiddesign/base/compare/v2.0.27...v2.0.28) (2025-05-29)
 
 ### Features
