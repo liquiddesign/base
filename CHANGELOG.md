@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.28](https://github.com/liquiddesign/base/compare/v2.0.27...v2.0.28) (2025-05-29)
+
+### Features
+
+* Update file glob pattern to include all file types in Scripts.php ([8e0c1f](https://github.com/liquiddesign/base/commit/8e0c1fdb73d5d342491d8f891885909bae2d6999))
+
+
+---
+
 ## [2.0.27](https://github.com/liquiddesign/base/compare/v2.0.26...v2.0.27) (2025-05-29)
 
 ### Features
