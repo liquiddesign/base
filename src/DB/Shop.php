@@ -22,6 +22,11 @@ class Shop extends Entity
 	public string $baseUrl;
 
 	/**
+	 * @column
+	 */
+	public string|null $shopUrl;
+
+	/**
 	 * @column{"type":"longtext"}
 	 */
 	public string|null $icon;
