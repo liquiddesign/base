@@ -52,7 +52,7 @@ abstract class Scripts
 		}
 
 		// Get all .html and .log files from the directory
-		$files = \glob($logDir . '/*', \GLOB_BRACE);
+		$files = \glob($logDir . '/*.{html,log}', \GLOB_BRACE);
 
 		// Add each file to the zip
 		foreach ($files as $file) {
