@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.31](https://github.com/liquiddesign/base/compare/v2.0.30...v2.0.31) (2025-06-09)
+
+### Features
+
+* Add bit manipulation method and icon image handling to Shop class ([5e8bc8](https://github.com/liquiddesign/base/commit/5e8bc8a4b2654c88d99be4604a44a8bb75a33c44))
+
+
+---
+
 ## [2.0.30](https://github.com/liquiddesign/base/compare/v2.0.29...v2.0.30) (2025-06-05)
 
 ### Features
