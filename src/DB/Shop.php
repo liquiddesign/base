@@ -38,4 +38,24 @@ class Shop extends Entity
 	{
 		return \explode(';', Strings::lower($this->baseUrl));
 	}
+
+	public function getIconImageSrc(): string|null
+	{
+		if ($this->icon === null) {
+			return null;
+		}
+
+		return 'data:image/png;base64,' . $this->icon;
+	}
+
+	public function getIconImageFormAdmin(): string|null
+	{
+		return $this->icon ? "<img
+                        width=\"24\"
+                        height=\"24\"
+                        src=\"data:image/png;base64,$this->icon\"
+                        alt=\"\"
+                        title=\"Specifické nastavení pro obchod: $this->name\"
+                    />" : $this->name . ': ';
+	}
 }

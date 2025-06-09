@@ -8,6 +8,17 @@ use StORM\Entity;
 
 class BaseHelpers
 {
+	public static function setBit(int &$number, int $position, int $value): void
+	{
+		if ($value === 1) {
+			// Set the bit at $position to 1 using bitwise OR.
+			$number |= (1 << $position);
+		} else {
+			// Clear the bit at $position (set to 0) using bitwise AND with the complement.
+			$number &= ~(1 << $position);
+		}
+	}
+
 	/**
 	 * @template T
 	 * @param array<T> $xs
