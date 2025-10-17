@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.32](https://github.com/liquiddesign/base/compare/v2.0.31...v2.0.32) (2025-10-17)
+
+### Features
+
+* Add script to archive and clean log files ([4bf2cb](https://github.com/liquiddesign/base/commit/4bf2cb2df9ed8c55c7e776319c59131c815268f0))
+
+
+---
+
 ## [2.0.31](https://github.com/liquiddesign/base/compare/v2.0.30...v2.0.31) (2025-06-09)
 
 ### Features
