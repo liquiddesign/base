@@ -43,7 +43,6 @@ class Bootstrap
 	
 	public static function getDebugModeByCookie(bool $default): bool
 	{
-		// @codingStandardsIgnoreLine
-		return (bool) ($_COOKIE['debug'] ?? $default);
+		return (bool) (\filter_input(\INPUT_COOKIE, 'debug') ?? $default);
 	}
 }

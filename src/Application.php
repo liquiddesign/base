@@ -70,7 +70,7 @@ class Application extends \Nette\Application\Application
 			try {
 				$app->setMutation($lang);
 			} catch (\InvalidArgumentException $exception) {
-				throw new \LiquidMonitorConnector\Exceptions\WeakException($exception::class, previous: $exception);
+				throw new Nette\Application\BadRequestException($exception->getMessage(), previous: $exception);
 			}
 		};
 	}
