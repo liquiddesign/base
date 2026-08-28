@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.34](https://github.com/liquiddesign/base/compare/v2.0.33...v2.0.34) (2026-08-28)
+
+### Bug Fixes
+
+* Ignore empty and whitespace-padded segments in `Shop::getBaseUrls()` — an empty part made `getSelectedShopByDomain()` match every host
+
+
+---
+
 ## [2.0.32](https://github.com/liquiddesign/base/compare/v2.0.31...v2.0.32) (2025-10-17)
 
 ### Features

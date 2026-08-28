@@ -32,11 +32,24 @@ class Shop extends Entity
 	public string|null $icon;
 
 	/**
+	 * Hosty shopu rozsekané ze středníkem oddělené hodnoty `baseUrl`.
+	 *
+	 * Prázdné části se zahazují: `getSelectedShopByDomain()` porovnává `str_contains($host, $baseUrl)`
+	 * a `str_contains($cokoli, '')` je vždy `true`, takže jediný prázdný segment (koncový `;`, `;;`
+	 * nebo prázdný `baseUrl`) by z tohohle shopu udělal match na **libovolnou** doménu a stáhl by na
+	 * něj provoz všech ostatních shopů. `trim()` je ze stejného soudku — `abel.cz; b2b.abel.sk`
+	 * s mezerou za středníkem by jinak nematchlo nikdy.
+	 *
 	 * @return list<string>
 	 */
 	public function getBaseUrls(): array
 	{
-		return \explode(';', Strings::lower($this->baseUrl));
+		$parts = \array_map(
+			static fn (string $part): string => \trim($part),
+			\explode(';', Strings::lower($this->baseUrl)),
+		);
+
+		return \array_values(\array_filter($parts, static fn (string $part): bool => $part !== ''));
 	}
 
 	public function getIconImageSrc(): string|null
