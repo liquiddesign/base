@@ -4,6 +4,15 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.36](https://github.com/liquiddesign/base/compare/v2.0.35...v2.0.36) (2026-10-22)
+
+### Styles
+
+* `Shop::getBaseUrls()` trims segments with `Strings::trim()` instead of the forbidden `trim()` and drops the blank docblock line — `composer phpcs` failed on `v2` since 2.0.34
+
+
+---
+
 ## [2.0.35](https://github.com/liquiddesign/base/compare/v2.0.34...v2.0.35) (2026-10-22)
 
 ### Performance Improvements

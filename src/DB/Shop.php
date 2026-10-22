@@ -37,15 +37,14 @@ class Shop extends Entity
 	 * Prázdné části se zahazují: `getSelectedShopByDomain()` porovnává `str_contains($host, $baseUrl)`
 	 * a `str_contains($cokoli, '')` je vždy `true`, takže jediný prázdný segment (koncový `;`, `;;`
 	 * nebo prázdný `baseUrl`) by z tohohle shopu udělal match na **libovolnou** doménu a stáhl by na
-	 * něj provoz všech ostatních shopů. `trim()` je ze stejného soudku — `abel.cz; b2b.abel.sk`
+	 * něj provoz všech ostatních shopů. Ořez mezer je ze stejného soudku — `abel.cz; b2b.abel.sk`
 	 * s mezerou za středníkem by jinak nematchlo nikdy.
-	 *
 	 * @return list<string>
 	 */
 	public function getBaseUrls(): array
 	{
 		$parts = \array_map(
-			static fn (string $part): string => \trim($part),
+			static fn (string $part): string => Strings::trim($part),
 			\explode(';', Strings::lower($this->baseUrl)),
 		);
 
