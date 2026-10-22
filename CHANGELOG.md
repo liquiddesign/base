@@ -4,6 +4,16 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.35](https://github.com/liquiddesign/base/compare/v2.0.34...v2.0.35) (2026-10-22)
+
+### Performance Improvements
+
+* Cache the parsed `config/environments.neon` in `temp/cache` as a PHP array (rebuilt when the file's mtime changes) — `Bootstrap::boot()` parsed the NEON on every request before the DI container existed (~1 ms)
+* In debug mode keep Tracy bar sessions in `temp/tracy-session` instead of `session.save_path`, where Tracy's 3 % garbage collection globbed the whole session directory
+
+
+---
+
 ## [2.0.34](https://github.com/liquiddesign/base/compare/v2.0.33...v2.0.34) (2026-08-28)
 
 ### Bug Fixes
