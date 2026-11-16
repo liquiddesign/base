@@ -102,7 +102,7 @@ abstract class Scripts
 		$cache = new Cache($container->getByType(Storage::class));
 
 		$cache->clean([
-			Cache::TAGS => ['categories', 'pricelists', 'products'],
+			Cache::Tags => ['categories', 'pricelists', 'products'],
 		]);
 
 		$event->getIO()->write('Eshop categories and products cache was cleaned.');

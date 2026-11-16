@@ -4,6 +4,12 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [2.0.37](https://github.com/liquiddesign/base/compare/v2.0.36...v2.0.37) (2026-11-16)
+
+### Compatibility
+
+* Allow `nette/caching` `^3.1.3 || ^4.0`. `Scripts::clearEshopCategoriesProductCache()` uses `Cache::Tags` instead of `Cache::TAGS`, which nette/caching 4 deprecates (`E_USER_DEPRECATED`, BlueScreen in Tracy debug mode); the PascalCase constants exist since 3.1.3 (no behaviour change)
+
 ## [2.0.36](https://github.com/liquiddesign/base/compare/v2.0.35...v2.0.36) (2026-10-22)
 
 ### Styles
